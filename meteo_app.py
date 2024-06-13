@@ -15,6 +15,7 @@ if city_name:
 
     now = datetime.now()
     st.write(f'Oggi è {now.date()}')
+    st.write(f'Meteo di oggi {now.day}/{now.month}/{now.year}')
     st.write('')
     
     temp = json['main']['temp'] -273.15
