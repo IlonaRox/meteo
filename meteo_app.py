@@ -19,22 +19,22 @@ if city_name:
     st.write('')
     
     temp = json['main']['temp'] -273.15
-    st.write(f'Temperatura - {round(temp, 2)} °C')
+    st.write(f'Temperatura - {round(temp, 1)} °C')
 
     perc = json['main']['feels_like'] -273.15
-    st.write(f'Temperatura percepita - {round(perc, 2)} °C')
+    st.write(f'Temperatura percepita - {round(perc, 1)} °C')
 
     temp_min = json['main']['temp_min'] -273.15
-    st.write(f'Temperatura minima - {round(temp_min, 2)} °C')
+    st.write(f'Temperatura minima - {round(temp_min, 1)} °C')
 
     temp_max = json['main']['temp_max'] -273.15
-    st.write(f'Temperatura massima - {round(temp_max, 2)} °C')
+    st.write(f'Temperatura massima - {round(temp_max, 1)} °C')
 
     pressione = json['main']['pressure']
-    st.write(f'Pressione: {round(pressione, 2)} hPa')
+    st.write(f'Pressione: {pressione} hPa')
 
     umidita = json['main']['humidity']
-    st.write(f'Umidità: {round(umidita, 2)} %')
+    st.write(f'Umidità: {umidita} %')
 
     vento = json['wind']['speed']
     st.write(f'Vento velocità: {round(vento, 2)} m/s')
